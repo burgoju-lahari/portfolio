@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top left, #111118, #050507);
+    color: #e4e4e7;
+}
+
+/* CURSOR GLOW */
+.cursor {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(159,122,234,0.18), transparent 70%);
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 40px;
+    gap: 100px;
+}
+
+/* LEFT */
+.left {
+    width: 40%;
+    position: sticky;
+    top: 100px;
+    height: 80vh;
+    display: flex;
+    margin-left: -20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.left h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9f7aea;
+    margin-bottom: 12px;
+}
+
+.left p {
+    font-size: 13px;
+    color: #a1a1aa;
+    margin-bottom: 28px;
+}
+
+/* NAV */
+.left nav a {
+    display: block;
+    font-size: 13px;
+    color: #71717a;
+    text-decoration: none;
+    margin: 6px 0;
+    transition: 0.2s;
+}
+
+.left nav a:hover {
+    color: #e4e4e7;
+}
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    gap: 18px;
+}
+
+.socials svg {
+    width: 18px;
+    height: 18px;
+    stroke: #71717a;
+    transition: 0.2s;
+}
+
+.socials svg:hover {
+    stroke: #9f7aea;
+}
+
+/* RIGHT */
+.right {
+    width: 62%;
+    margin-right: -20px;
+}
+
+.right p {
+    font-size : 15px;
+    line-height: 1.7;
+    color: #cbd5f5;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 90px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+/* PROJECT */
+.project {
+    padding: 20px 22px;
+    border-radius: 12px;
+    border: 1px solid #1f1f26;
+    margin-bottom: 18px;
+    transition: 0.25s;
+}
+
+.project:hover {
+    border-color: #9f7aea;
+    transform: translateY(-3px);
+}
+
+.project h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #a1a1aa;
+}
+
+/* LINKS */
+.links a {
+    font-size: 14px;
+    margin-right: 14px;
+    color: #9f7aea;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
